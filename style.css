@@ -7,6 +7,23 @@
   z-index: 1;
 }
 
+.heads {
+  display: flex;
+  bottom: 300px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.score {
+  display: flex;
+  color: white;
+  font-size: 30px;
+  justify-content: center;
+  position: relative;
+  bottom: 420px;
+}
 
 video {
   position: fixed;

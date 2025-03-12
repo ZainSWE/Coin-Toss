@@ -4,17 +4,26 @@
     <title>Coin Toss</title>
     <link rel="stylesheet" href="style.css">
   </head>
+
   <body>
     <video id="background" muted playsinline webkit-playsinline>
       <source src="background.mp4" type="video/mp4">
     </video>
+
     <audio id="coin">
       <source src="coin.m4a" type="audio/mpeg">
     </audio>
-    <br>
+
     <div class="center">
-      <button onclick="button()"><p>Toss</p></button>
-      <script src="app.js"></script>
+      <button onclick="toss()">
+        <p>Toss</p>
+      </button>
     </div>
+
+    <p id="score count" class="score"></p>
+    <div class="score">
+    </div>
+
+    <script src="app.js"></script>
   </body>
 </html>
