@@ -6,7 +6,10 @@ function toss() {
   console.log('button was pressed');
   const video = document.getElementById('background');
   const audio = document.getElementById('coin');
-  
+  const button = document.getElementById('tossButton');
+
+  button.disabled = true;
+
   const randomNumber = Math.random();
   console.log(randomNumber);
 
@@ -30,4 +33,8 @@ function toss() {
     audio.currentTime = 0;
     audio.play();
   }
+
+  video.onended = () => {
+    button.disabled = false;
+  };
 }
