@@ -2,7 +2,7 @@ let heads = 0;
 let tails = 0;
 let currentStreak = 0;
 let lastResult = '';
-document.getElementById("score count").innerHTML = `Heads: ${heads} Tails: ${tails}`;
+document.getElementById('score').innerHTML = `Heads: ${heads} Tails: ${tails}`;
 
 function toss() {
   console.log('button was pressed');
@@ -30,7 +30,7 @@ function toss() {
 
     lastResult = 'heads';
 
-    document.getElementById("score count").innerHTML = `Heads: ${heads} Tails: ${tails}`;
+    document.getElementById('score').innerHTML = `Heads: ${heads} Tails: ${tails}`;
 
   } else if (randomNumber < 0.5) {
     console.log('tails');
@@ -44,7 +44,7 @@ function toss() {
 
     lastResult = 'tails';
 
-    document.getElementById("score count").innerHTML = `Heads: ${heads} Tails: ${tails}`;
+    document.getElementById('score').innerHTML = `Heads: ${heads} Tails: ${tails}`;
   }
 
   console.log(`current streak: ${currentStreak}`);
@@ -99,5 +99,5 @@ function resetScore() {
   tails = 0;
   currentStreak = 0;
   console.log('SCORE RESET');
-  document.getElementById("score count").innerHTML = `Heads: ${heads} Tails: ${tails}`;
+  document.getElementById('score').innerHTML = `Heads: ${heads} Tails: ${tails}`;
 }
