@@ -37,4 +37,31 @@ function toss() {
   video.onended = () => {
     button.disabled = false;
   };
+
+  //multiplier();
 }
+
+function customToss() {
+  const customToss = prompt('Enter toss:');
+
+  for (let i = 0; i < customToss; i++) {
+    toss();
+  }
+}
+
+/*
+function multiplier() {
+
+  for (let i = 0; i < 5; i++) {
+    if (heads === 1 && tails === 0) {
+      heads += 1 * 5;
+    }
+  }
+
+  for (let i = 0; i < 5; i++) {
+    if (tails === 1 && heads === 0) {
+      tails += 1 * 5;
+    }
+  }
+}
+*/

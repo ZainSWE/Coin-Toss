@@ -1,29 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html class="josefin-sans-normal">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <title>Coin Toss</title>
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
+    <p class="title">COIN TOSS SIMULATOR</p>
+
     <video id="background" muted playsinline webkit-playsinline>
       <source src="background.mp4" type="video/mp4">
     </video>
 
     <audio id="coin">
-      <source src="coin.mp3" type="audio/mpeg">
+      <source src="toss.mp3" type="audio/mpeg">
     </audio>
 
     <div class="center">
       <button id="tossButton" onclick="toss()">
-        <p>Toss</p>
+        <p>TOSS</p>
+      </button>
+      <button id="customToss" onclick="customToss()">
+        <p>ENTER TOSS</p>
       </button>
     </div>
 
     <p id="score count" class="score"></p>
-    <div class="score">
-      <p>Coin Toss Simulator</p>
-    </div>
 
     <script src="app.js"></script>
   </body>
